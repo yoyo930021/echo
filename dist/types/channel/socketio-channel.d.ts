@@ -10,7 +10,7 @@ export declare class SocketIoChannel extends Channel {
     events: {
         [key: string]: Function[];
     };
-    constructor(socket: any, name: string, options: any);
+    constructor(socket: any, name: string, options: EchoOptions);
     subscribe(): any;
     unsubscribe(): void;
     listen(event: string, callback: Function): SocketIoChannel;
