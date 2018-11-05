@@ -1,6 +1,6 @@
 /// <reference types="socket.io-client" />
-import { PusherStatic, AuthConfig } from "pusher-js";
-export default interface EchoOptions extends PusherStatic, SocketIOClient.ConnectOpts {
+import { AuthConfig, Config } from "pusher-js";
+export default interface EchoOptions extends Config, SocketIOClient.ConnectOpts {
     namespace?: string;
     authEndpoint?: string;
     broadcaster?: string;
